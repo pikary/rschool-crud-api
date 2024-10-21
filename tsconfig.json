@@ -8,7 +8,8 @@
     "declaration": true,
     "moduleResolution": "node",
     "outDir": "./dist",
-    "rootDir": "."
+    "rootDir": ".",
+    "esModuleInterop": true
   },
   "include": ["src"]
 }

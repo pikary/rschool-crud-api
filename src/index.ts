@@ -1,11 +1,11 @@
-import {createServer,IncomingMessage,ServerResponse} from 'http'
+import server from "./app"
+import * as dotenv from 'dotenv';
 
-const PORT = 3000
+dotenv.config()
 
-const server = createServer((req,res)=>{
+const PORT = process.env.PORT || 3000
 
-})
-server.listen(PORT, ()=>{
+server.listen(PORT, () => {
     console.log(
         'Server started on port ' + PORT
     )
