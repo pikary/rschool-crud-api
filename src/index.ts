@@ -10,7 +10,7 @@ dotenv.config()
 const PORT = process.env.PORT || 3000
 
 
-const requestListener = (req: IncomingMessage, res: ServerResponse) => {
+export const requestListener = (req: IncomingMessage, res: ServerResponse) => {
     const { url } = req;
     const parsedUrl = parse(url || '', true);
     const path = parsedUrl.pathname || '';
