@@ -6,5 +6,8 @@ describe('User api tests', ()=>{
   it('should return array', async()=>{
     const result = await request(server).get('/api/users')
     expect(result.status).toBe(200)
+    expect(result.body).toBe([])
+
   })
+
 })
