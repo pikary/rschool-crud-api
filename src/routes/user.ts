@@ -68,7 +68,7 @@ export const usersRouter = async(req: IncomingMessage, res: ServerResponse) => {
     const success = deleteUser(id);
     if (success) {
       res.writeHead(204);
-      res.end();
+      res.end(JSON.stringify({message: 'User has been deleted'}));
     } else {
       res.writeHead(404);
       res.end(JSON.stringify({ message: 'User not found' }));
