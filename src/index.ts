@@ -1,8 +1,11 @@
 import { createServer, IncomingMessage, ServerResponse } from 'http'
 import { parse } from 'url'
 import { usersRouter } from './routes/user'
+import * as dotenv from 'dotenv';
 
-const PORT = 3000
+dotenv.config()
+
+const PORT = process.env.PORT || 3000
 
 
 const requestListener = (req: IncomingMessage, res: ServerResponse) => {

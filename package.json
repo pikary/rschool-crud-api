@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/uuid": "^10.0.0",
     "@types/webpack": "^5.28.5",
     "cross-env": "^7.0.3",
@@ -23,6 +24,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "uuid": "^10.0.0"
   }
 }
